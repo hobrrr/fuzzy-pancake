@@ -1,14 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <title>video</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видео на весь экран</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
-    <video controls width="560" height="315" src="../1209.mp4" autoplay; loop; allowfullscreen>
-</video>
-    <script>document.getElementsByTagName('video')[0].video = 0.1;</script>
+    <video autoplay loop>
+        <source src="1209.mp4" type="video/mp4">
+        Ваш браузер не поддерживает воспроизведение видео.
+    </video>
 </body>
 </html>
+
+
 
 
 
